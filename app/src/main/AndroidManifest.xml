@@ -10,17 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:label="E53 Simple ListView"
             android:name=".MainActivity"
+            android:label="E53 Simple ListView"
             android:taskAffinity=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:label="E53 Custom ListView"
             android:name=".CustomLayoutActivity"
+            android:label="E53 Custom ListView"
             android:taskAffinity=".CustomLayoutActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +29,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity
+            android:name=".JsonListView"
+            android:taskAffinity=".JsonListView"
+            android:label="E53 Json ListView">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

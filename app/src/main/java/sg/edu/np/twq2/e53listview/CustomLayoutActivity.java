@@ -19,9 +19,8 @@ public class CustomLayoutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_custom_layout);
 
-        for(int i=0; i<20; i++)
-        {
-            data.add(new Song("T" + i, "a" + i, "0:"+i));
+        for (int i = 0; i < 20; i++) {
+            data.add(new Song("T" + i, "a" + i, "0:" + i));
         }
 
         SongsAdapter itemsAdapter = new SongsAdapter(this, R.layout.item_song_layout, data);
