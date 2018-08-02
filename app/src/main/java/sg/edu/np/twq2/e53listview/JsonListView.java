@@ -51,6 +51,9 @@ public class JsonListView extends AppCompatActivity implements GetJson.CallBack{
     @Override
     public void onJsonRetrieved(String json)
     {
+        if(json.length() == 0)
+            return;
+
         Type listType = new TypeToken<ArrayList<Song>>(){}.getType();
         List<Song> newData = new Gson().fromJson(json, listType);
         data.clear();
